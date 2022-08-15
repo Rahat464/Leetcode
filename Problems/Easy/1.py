@@ -1,3 +1,5 @@
+# 1. Two Sum
+# https://leetcode.com/problems/two-sum/
 nums = [3,2,3]
 target = 6
 
