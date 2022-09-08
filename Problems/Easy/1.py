@@ -1,14 +1,10 @@
-nums = [3,2,3]
-target = 6
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
 
-def twoSum():
-    length = len(nums)
-    for i in range(0, length - 1):
-        result = target - nums[i]
+        length = len(nums)
+        for i in range(0, length - 1):
+            result = target - nums[i]
 
-        for j in range(i+1, length):
-            if nums[j] == result:
-                answer = [nums[i], nums[j]]
-                return answer
-
-print(twoSum())
+            for j in range(i + 1, length):
+                if nums[j] == result:
+                    return [i, j]
